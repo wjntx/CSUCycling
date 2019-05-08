@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSU Rams Cyling</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	  body {
+		  font-family: Klavika;
+	  }
+	  h5 {
+		  font-size: 2em;
+	  }
+	  h4 {
+		  font-size: 1.5em;
+	  }
+	  h6 {
+		  font-size: 1.25em;
+	  }
+	  .navbar {
+		  margin-bottom: 0;
+		  border-radius: 0;
+		  background-color: rgb(30, 77, 43);
+		  color: #FFF;
+		  padding: 1% 0;
+		  font-size: 1.2em;
+		  border: 0;
+	  }
+	  .navbar-brand {
+		  float: left;
+		  min-height: 55px;
+		  padding: 0 15px 15px;
+		  width: 40%; 
+		  height: 40%; 
+	  }
+	  .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+		  color: #FFF;
+		  background-color: rgb(30, 77, 43);
+	  }
+	  .navbar-inverse .navbar-nav li a{
+		  color: #D5D5D5;
+	  }
+	  .carousel-caption {
+		  top: 32%;
+		  transform: translateY(-50%);
+		  text-transform: uppercase;
+	  }
+	  .btn {
+		  font-size: 18px;
+		  color: #FFF;
+		  padding: 12px 22px;
+		  background: rgb(30, 77, 43);
+		  border: 2px solid #FFF;
+	  }
+	  .btn:hover {
+		  color: #FFF;
+	  }
+	  #icon {
+		  max-width: 200px;
+		  margin: 1% auto;
+	  }
+	  .container {
+		  margin: 4% auto;
+	  }
+	  footer {
+		  width: 100%;
+		  background-color: rgb(30, 77, 43);
+		  padding: 5%;
+		  color: #FFF;
+	  }
+	  .fa {
+		  padding: 20px;
+		  font-size: 30px;
+		  color: #FFF;
+	  }
+	  .fa:hover {
+		  color: #D5D5D5;
+		  text-decoration: none;
+	  }
+	  @media (max-width: 900px) {
+		  .fa {
+			  padding: 15px;
+			  font-size: 25px;
+			  color: #FFF;
+		  }
+	  }
+	  @media (max-width: 600px) {
+		  .carousel-caption {
+			  display: none;
+		  }
+		  #icon {
+			  max-width: 150px;
+		  }
+		  h2 {
+			  font-size: 1.7em;
+		  }
+	  }
+  </style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<!--<a class="navbar-brand" href="#"><img src="img/csulogo.png" class="img-responsive"></a> -->
+				<h5>CSU Rams Cycling</h5>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About & FAQ</a></li>
+					<li><a href="calander.html">Calander</a></li>
+					<li><a href="media.html">Media</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+			<img src="img/cyclingphoto1.jpg">
+			<div class="carousel-caption">
+				<h1>CSU Rams Cycling Team</h1>
+				<br>
+				<a href="about.html"><button type="button" class="btn btn-default">Learn More</button></a>
+			</div>
+			</div> <!-- End Active -->
+			<div class="item">
+				<img src="img/cyclingphoto2.jpg">
+			</div>
+			<div class="item">
+				<img src="img/cyclingphoto3.jpg">
+			</div>
+		</div>
+		<!-- Start Slider Controls -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+	</div> <!-- End Slider -->
+	
+	<div class="container text-center">
+		<h5>Our Disciplines</h5>
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="img\RoadIcon.png" id="icon">
+				<h4>Road</h4>
+			</div>
+			<div class="col-sm-4">
+				<img src="img\MountainIcon.png" id="icon">
+				<h4>Mountain</h4>
+			</div>
+			<div class="col-sm-4">
+				<img src="img\BMXIcon.png" id="icon">
+				<h4>Cross, BMX, Track</h4>
+			</div>
+		</div>
+	</div> 
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h4>Welcome to the offical Website of the CSU Rams Cycling Team...</h4>
+				<h6><p>Whether you are a seasoned pro or have never raced before, we encourage you to join the Rams Cycling Team!  We compete in mountain, road, track, cyclocross, and now BMX!  Please check the <a href="calander.html">schedule</a> for the current meeting time and location. See our <a href="about.html">Frequently Asked Questions</a> for more information.</p>
+				<p>Our team holds events throughout the year for all disciplines so be sure to stay up to date in our google group and watch for how you to get involved. We not only love to race and hold events for our club, but giving back to the cycling community of fort collins is one of our biggest priorities. Holding silent auctions, fundraisers, and other events to help get the local community to come together is something we emphisize through our organization.</p></h6>
+			</div>
+			<div class="col-md-6">
+				<img src="img/roadcycling1.jpg" class="img-responsive">
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h4>Mountain Season</h4>
+				<p>The racing season for mountain biking starts in the beginning of the fall semseter and runs about 8-10 weeks. We race in both cross country and downhill every weekend during the season. Whether you have never raced before and are interested or you have a lot of experince racing, we have a great community that will help push and develop you as a rider.</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="img/mountaincycling1.jpg" class="img-responsive">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h4>Road Season</h4>
+				<p>The road season for road biking starts in the middle of the spring semseter and runs about 8-10 weeks. We race in events such as time trials and criteriums. Every year we host a race weekend where we host a criterium around the oval and a race out at cobb lake. Whether you have never raced before and are interested or you have a lot of experince racing, we have a great community that will help push and develop you as a rider.</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="img/roadcycling2.jpg" class="img-responsive">
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+					<div id="hidden" class="collapse">
+				<h4>Here's the cool thing about Bootstrap...</h4>
+				<p>Lorem ipsum nisi eros conubia faucibus sagittis aptent auctor urna, commodo praesent integer taciti nunc 				eleifend posuere faucibus, tempor purus vitae facilisis hac velit cursus venenatis feugiat inceptos consequat curae 				in fermentum nec. Lorem ipsum nisi eros conubia faucibus sagittis aptent auctor urna, commodo praesent integer 				taciti nunc eleifend posuere faucibus, tempor purus vitae facilisis hac velit cursus venenatis feugiat inceptos 				consequat curae in fermentum nec.</p>
+				<p>Lorem ipsum nisi eros conubia faucibus sagittis aptent auctor urna, commodo praesent integer taciti nunc 				eleifend posuere faucibus, tempor purus vitae facilisis hac velit cursus venenatis feugiat inceptos consequat curae 				in fermentum nec.</p>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer class="container-fluid text-center">
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Join Us!</h3>
+				<br>
+				<h4><a href="https://groups.google.com/forum/?hl=en&fromgroups=#!forum/csuramscycling"> Click here</a> to join our google group that has the most
+					<br> up to date information about the team.</h4>
+			</div>
+			<div class="col-sm-6">
+				<h3>Connect</h3>
+				<a href="https://www.facebook.com/CSURamsCycling/" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/RamsCycling" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/csucycling/" class="fa fa-instagram"></a>
+				<a href="https://www.youtube.com/channel/UC5Itrex9qVMFy3_3xO53FvA" class="fa fa-youtube"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
